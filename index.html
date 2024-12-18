@@ -1,111 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Iraj Shrotri - Professional Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Iraj Shrotri - Professional Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Iraj Shrotri - Professional Portfolio</h1>
-    </header>
-
+  <header>
     <nav>
-        <a href="#about-me">About Me</a>
-        <a href="#technical-skills">Technical Skills</a>
-        <a href="#work-experience">Work Experience</a>
-        <a href="#projects">Projects</a>
-        <a href="#awards">Awards & Recognitions</a>
-        <a href="#portfolio">Portfolio</a>
-        <a href="#contact">Contact</a>
+      <ul>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#skills">Technical Skills</a></li>
+        <li><a href="#experience">Work Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#awards">Awards & Recognitions</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </nav>
+  </header>
 
-    <main>
-        <section id="about-me">
-            <h2>About Me</h2>
-            <p>I am a dedicated Process Engineer specializing in lithography and advanced materials research...</p>
-        </section>
+  <main>
+    <section id="about">
+      <h1>About Me</h1>
+      <p>I am a dedicated Process Engineer specializing in lithography and advanced materials research with a Bachelor of Science in Electrical Engineering from the University of California, Riverside. My expertise spans process optimization, machine learning, robotics, and material science, complemented by a passion for solving real-world engineering challenges. I am committed to advancing innovation through cross-disciplinary collaboration and cutting-edge technology.</p>
+    </section>
 
-        <section id="technical-skills">
-            <h2>Technical Skills</h2>
+    <section id="skills">
+      <h2>Technical Skills</h2>
+      <ul>
+        <li>Programming Languages: C, C++, C#, MATLAB, Java, Python, HTML, CSS, Verilog, Assembly</li>
+        <li>Tools & Platforms: LTSpice, SolidWorks, AutoCAD, SQL, JMP, Colab, Visual Studio</li>
+        <li>Technologies: Machine Learning (NumPy, Pandas, Matplotlib), Optical Systems, Robotics, Arduino</li>
+        <li>Soft Skills: Leadership, Task Prioritization, Collaboration, Problem-Solving</li>
+      </ul>
+    </section>
+
+    <section id="experience">
+      <h2>Work Experience</h2>
+
+      <div class="job">
+        <h3>Process Engineer</h3>
+        <p><strong>Intel Corporation, Fab 11X</strong><br>Oct 2023 – Present</p>
+        <ul>
+          <li>Maintained and optimized Veeco AP-300 Lithography systems, ensuring high production yields.</li>
+          <li>Utilized advanced optical inspection systems to identify and resolve production defects.</li>
+          <li>Facilitated new product transfer initiatives for Canon and Veeco toolsets, enhancing process capabilities.</li>
+          <li>Accomplishments:
             <ul>
-                <li>Programming Languages: C, C++, C#, MATLAB, Java, Python, HTML, CSS, Verilog, Assembly</li>
-                <li>Tools & Platforms: LTSpice, SolidWorks, AutoCAD, SQL, JMP, Colab, Visual Studio</li>
-                <li>Technologies: Machine Learning (NumPy, Pandas, Matplotlib), Optical Systems, Robotics, Arduino</li>
-                <li>Soft Skills: Leadership, Task Prioritization, Collaboration, Problem-Solving</li>
+              <li>PM reduction white paper saving X hours.</li>
+              <li>Resolved defect tracer on Veeco toolset.</li>
+              <li>Resolved electrostatic discharge on Veeco toolset.</li>
+              <li>Oversaw upgrades on Veeco toolset.</li>
+              <li>Oversaw defect resolution, troubleshooted, and processed affected wafers.</li>
+              <li>Experience with Nikon and ASML tools.</li>
+              <li>New product transfers for both Veeco and Canon toolsets.</li>
+              <li>Experience with metrology tools (TMC, OVZ, MIK).</li>
             </ul>
-        </section>
+          </li>
+        </ul>
+      </div>
 
-        <section id="work-experience">
-            <h2>Work Experience</h2>
-            <article>
-                <h3>Process Engineer</h3>
-                <p>Intel Corporation, Fab 11X</p>
-                <p>Oct 2023 – Present</p>
-                <ul>
-                    <li>Maintained and optimized Veeco AP-300 Lithography systems...</li>
-                    <li>Facilitated new product transfer initiatives for Canon and Veeco toolsets...</li>
-                </ul>
-            </article>
+      <div class="job">
+        <h3>Undergraduate Research Assistant</h3>
+        <p><strong>University of California, Riverside</strong><br>Sept 2022 – July 2023</p>
+        <ul>
+          <li>Conducted experiments in material science, focusing on combustion properties and imaging techniques.</li>
+          <li>Collaborated with researchers to advance the field of molten boron particle analysis through MATLAB.</li>
+          <li>Designed and implemented instrumentation updates for material burn rate measurement rigs.</li>
+        </ul>
+      </div>
+    </section>
 
-            <article>
-                <h3>Undergraduate Research Assistant</h3>
-                <p>University of California, Riverside</p>
-                <p>Sept 2022 – July 2023</p>
-                <ul>
-                    <li>Conducted experiments in material science...</li>
-                    <li>Collaborated with researchers to advance the field of molten boron particle analysis...</li>
-                </ul>
-            </article>
-        </section>
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="project">
+        <h3>Earth Rover – Senior Design Project</h3>
+        <p>Developed a versatile, radio-controlled vehicle for real-time soil sampling and environmental data collection. Integrated autonomous navigation and object detection using 2D LiDAR and a 2MP camera.</p>
+        <a href="#">View Presentation</a>
+      </div>
 
-        <section id="projects">
-            <h2>Projects</h2>
-            <article>
-                <h3>Earth Rover – Senior Design Project</h3>
-                <p>Developed a versatile, radio-controlled vehicle for real-time soil sampling and environmental data collection...</p>
-                <a href="path/to/presentation">View Presentation</a>
-            </article>
+      <div class="project">
+        <h3>Updating Counter Flow Lab Setup</h3>
+        <p>Modernized a material burn rate measurement rig with updated hardware and software, including a ThorLabs micro stepper controller and Arduino integration for precision measurements.</p>
+        <a href="#">View Presentation</a>
+      </div>
 
-            <article>
-                <h3>Updating Counter Flow Lab Setup</h3>
-                <p>Modernized a material burn rate measurement rig with updated hardware and software...</p>
-                <a href="path/to/presentation">View Presentation</a>
-            </article>
+      <div class="project">
+        <h3>Machine Learning Test Data Imaging Construction</h3>
+        <p>Designed and constructed high-precision training data for machine learning models to identify particles in molten boron. Optimized imaging through MATLAB for enhanced model accuracy.</p>
+        <a href="#">View Demo</a>
+      </div>
 
-            <article>
-                <h3>Machine Learning Test Data Imaging Construction</h3>
-                <p>Designed and constructed high-precision training data for machine learning models...</p>
-                <a href="path/to/demo">View Demo</a>
-            </article>
-        </section>
+      <div class="project">
+        <h3>Emulator Project</h3>
+        <p>A blank section to fill in details later.</p>
+      </div>
 
-        <section id="awards">
-            <h2>Awards & Recognitions</h2>
-            <ul>
-                <li>Inova'R Award – ICorps: $3,000 prototyping grant for designing a custom jukebox...</li>
-                <!-- Additional awards can be listed here -->
-            </ul>
-        </section>
+      <div class="project">
+        <h3>Video Game Project</h3>
+        <p>A blank section to fill in details later.</p>
+      </div>
+    </section>
 
-        <section id="portfolio">
-            <h2>Portfolio</h2>
-            <p>Explore my technical projects, including code samples, documentation, and real-world problem-solving solutions.</p>
-            <a href="https://shrotriiraj.github.io" target="_blank">GitHub Repository</a>
-        </section>
+    <section id="awards">
+      <h2>Awards & Recognitions</h2>
+      <ul>
+        <li><strong>Inova'R Award – ICorps</strong>: $3,000 prototyping grant for designing a custom jukebox supporting various vinyl sizes, Dec 2020 – Mar 2021</li>
+      </ul>
+    </section>
 
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>Email: shrotriiraj@gmail.com</p>
-            <p>Phone: (408)-203-1670</p>
-            <p>LinkedIn: <a href="https://linkedin.com/in/iraj-shrotri" target="_blank">linkedin.com/in/iraj-shrotri</a></p>
-        </section>
-    </main>
+    <section id="portfolio">
+      <h2>Portfolio</h2>
+      <p>Explore my technical projects, including code samples, documentation, and real-world problem-solving solutions.</p>
+      <a href="https://shrotriiraj.github.io" target="_blank">GitHub Repository</a>
+    </section>
 
-    <footer>
-        <p>© 2024 Iraj Shrotri. All Rights Reserved.</p>
-        <a href="mailto:shrotriiraj@gmail.com">Email Me</a> | <a href="https://linkedin.com/in/iraj-shrotri" target="_blank">LinkedIn</a>
-    </footer>
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:shrotriiraj@gmail.com">shrotriiraj@gmail.com</a></p>
+      <p>Phone: (408)-203-1670</p>
+      <p>LinkedIn: <a href="https://linkedin.com/in/iraj-shrotri" target="_blank">linkedin.com/in/iraj-shrotri</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Iraj Shrotri. All Rights Reserved.</p>
+  </footer>
 </body>
 </html>
