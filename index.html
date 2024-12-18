@@ -1,386 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iraj Shrotri - Professional Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Iraj Shrotri - Professional Portfolio</h1>
+    </header>
 
-    <!--CSS Styles -->
-    <link rel="stylesheet" href="style.css">
-
-    <!-- Favicons -->
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="assets/icons/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="assets/icons/favicon-32x32.png"
-    />
-
-    <!-- Animate CSS CDN -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
-    <title>Iraj Shrotri | Engineering In Training</title>
-  </head>
-
-  <body>
-    <!-- Navbar -->
     <nav>
-      <h1>IRAJ SHROTRI</h1>
-      <ul class="navigation">
-        <li><a href="#about" class="nav-link">About</a></li>
-        <li><a href="#skills" class="nav-link">Skills</a></li>
-        <li><a href="#projects" class="nav-link">Projects</a></li>
-        <li><a href="#workexperience" class="nav-link">Work Expereience</a></li>
-        <li><a href="#documents" class="nav-link">Documents</a></li>
-        <li><a href="#contact" class="nav-link">Contact</a></li>
-      </ul>
-      <button class="burger-menu" id="burger-menu">
-        <ion-icon class="bars" name="menu-outline"></ion-icon>
-      </button>
-      <script>
-        // Nav hamburgerburger selections
-
-        const burger = document.querySelector("#burger-menu");
-        const ul = document.querySelector("nav ul");
-        const nav = document.querySelector("nav");
-
-        burger.addEventListener("click", () => {
-          ul.classList.toggle("show");
-        });
-
-        // Close hamburger menu when a link is clicked
-
-        // Select nav links
-        const navLink = document.querySelectorAll(".nav-link");
-
-        navLink.forEach((link) =>
-          link.addEventListener("click", () => {
-            ul.classList.remove("show");
-          })
-        );
-      </script>
+        <a href="#about-me">About Me</a>
+        <a href="#technical-skills">Technical Skills</a>
+        <a href="#work-experience">Work Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#awards">Awards & Recognitions</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
     </nav>
-    
 
-    <!-- Hero Section -->
-    <section class="hero" id="about">
+    <main>
+        <section id="about-me">
+            <h2>About Me</h2>
+            <p>I am a dedicated Process Engineer specializing in lithography and advanced materials research...</p>
+        </section>
 
-      <img
-        src="https://assets.website-files.com/60a3c1fc44c5715c395770e7/60df7df9f556c51f3dfbcf66_Depositphotos_4468639_m-2015.jpeg"
-        alt="iraj-profil"
-        class="hero-img"
-      />
+        <section id="technical-skills">
+            <h2>Technical Skills</h2>
+            <ul>
+                <li>Programming Languages: C, C++, C#, MATLAB, Java, Python, HTML, CSS, Verilog, Assembly</li>
+                <li>Tools & Platforms: LTSpice, SolidWorks, AutoCAD, SQL, JMP, Colab, Visual Studio</li>
+                <li>Technologies: Machine Learning (NumPy, Pandas, Matplotlib), Optical Systems, Robotics, Arduino</li>
+                <li>Soft Skills: Leadership, Task Prioritization, Collaboration, Problem-Solving</li>
+            </ul>
+        </section>
 
-      <div class="bio animate__animated animate__shakeX">
-        <h2 class="bio-title">About Me</h2>
-        <p class="bio-text">
-          Driven student leveraging studies in electrical engineering seeks 
-          real world experience as an Engineering Intern. Offers strong 
-          interpersonal, leadership, and task prioritization skills.
-        </p>
-      </div>
-    </section>
+        <section id="work-experience">
+            <h2>Work Experience</h2>
+            <article>
+                <h3>Process Engineer</h3>
+                <p>Intel Corporation, Fab 11X</p>
+                <p>Oct 2023 – Present</p>
+                <ul>
+                    <li>Maintained and optimized Veeco AP-300 Lithography systems...</li>
+                    <li>Facilitated new product transfer initiatives for Canon and Veeco toolsets...</li>
+                </ul>
+            </article>
 
-  </p>
+            <article>
+                <h3>Undergraduate Research Assistant</h3>
+                <p>University of California, Riverside</p>
+                <p>Sept 2022 – July 2023</p>
+                <ul>
+                    <li>Conducted experiments in material science...</li>
+                    <li>Collaborated with researchers to advance the field of molten boron particle analysis...</li>
+                </ul>
+            </article>
+        </section>
 
-    <!-- More about -->
-    <section class="more-about">
-      <h2>Interests and Hobbies</h2>
-      <p>
-        I’ve built/repaired several PCs, laptops and game consoles by myself for others. I've modded controllers and made 
-        a custom keyboard. I’m also very experienced with Virtual Machines, as I have used them in classes and on my own 
-        coding projects. Very versed in LTSpice, Matlab, and C++. I'm involved in undergraduate research at University of
-        California - Riverside with the Zachariah group. I'm an Eagle Scout, and I did Wrestling in High School.
-      </p>
-    </section>
+        <section id="projects">
+            <h2>Projects</h2>
+            <article>
+                <h3>Earth Rover – Senior Design Project</h3>
+                <p>Developed a versatile, radio-controlled vehicle for real-time soil sampling and environmental data collection...</p>
+                <a href="path/to/presentation">View Presentation</a>
+            </article>
 
-    <!-- Skills section -->
-    <section class="skills" id="skills">
-      <h2 class="skill-header">My Top Skills</h2>
+            <article>
+                <h3>Updating Counter Flow Lab Setup</h3>
+                <p>Modernized a material burn rate measurement rig with updated hardware and software...</p>
+                <a href="path/to/presentation">View Presentation</a>
+            </article>
 
-      <div class="skills-wrapper">
-        <div class="first-set animate__animated animate__pulse">
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/2/21/Matlab_Logo.png"
-            alt=""
-            loading="lazy"
-            class="icon icon-card"
-          />
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/1200px-ISO_C%2B%2B_Logo.svg.png"
-            alt=""
-            loading="lazy"
-            class="icon icon-card"
-          />
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/800px-Python-logo-notext.svg.png"
-            alt=""
-            loading="lazy"
-            class="icon icon-card"
-          />
-        </div>
+            <article>
+                <h3>Machine Learning Test Data Imaging Construction</h3>
+                <p>Designed and constructed high-precision training data for machine learning models...</p>
+                <a href="path/to/demo">View Demo</a>
+            </article>
+        </section>
 
-        <div class="second-set animate__animated animate__pulse">
-          <img
-            src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera-course-photos.s3.amazonaws.com/0a/8cd7f1b14344618b75142593bc7af8/JavaCupLogo800x800.png?auto=format%2Ccompress&dpr=1"
-            alt=""
-            loading="lazy"
-            class="icon icon-card"
-          />
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/1/19/C_Logo.png?20201023095457"
-            alt=""
-            loading="lazy"
-            class="icon icon-card"
-          />
-          <img
-            src="https://ez.analog.com/cfs-file/__key/communityserver-components-groupavatars/00-00-00-06-51/LTspice_2D00_Icon.png_2D00_320x240.png.png"
-            alt=""
-            loading="lazy"
-            class="icon icon-card"
-          />
-        </div>
+        <section id="awards">
+            <h2>Awards & Recognitions</h2>
+            <ul>
+                <li>Inova'R Award – ICorps: $3,000 prototyping grant for designing a custom jukebox...</li>
+                <!-- Additional awards can be listed here -->
+            </ul>
+        </section>
 
+        <section id="portfolio">
+            <h2>Portfolio</h2>
+            <p>Explore my technical projects, including code samples, documentation, and real-world problem-solving solutions.</p>
+            <a href="https://shrotriiraj.github.io" target="_blank">GitHub Repository</a>
+        </section>
 
-        <div class="second-set animate__animated animate__pulse">
-          <img
-            src="https://miro.medium.com/max/792/1*lJ32Bl-lHWmNMUSiSq17gQ.png"
-            alt=""
-            loading="lazy"
-            class="icon icon-card"
-          />
-          <img
-            src="https://cdn.pixabay.com/photo/2017/03/23/12/32/arduino-2168193__480.png"
-            alt=""
-            loading="lazy"
-            class="icon icon-card"
-          />
-        </div>
-      </div>
-    </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Email: shrotriiraj@gmail.com</p>
+            <p>Phone: (408)-203-1670</p>
+            <p>LinkedIn: <a href="https://linkedin.com/in/iraj-shrotri" target="_blank">linkedin.com/in/iraj-shrotri</a></p>
+        </section>
+    </main>
 
-    <!-- Projects section -->
-    <section class="projects" id="projects">
-      <h2 class="projects-title">Some of my Recent Projects</h2>
-      <div class="projects-container">
-
-        <div class="project-container project-card">
-          <h3 class="project-title">Dark Souls 3 Class Mod</h3>
-          <img
-            src="https://staticdelivery.nexusmods.com/mods/1392/images/1457/1457-1658622455-833378415.jpeg"
-            alt="ringed-knight"
-            loading="lazy"
-            class="project-pic"
-          />
-          <p class="project-details">
-            Starting class mod for DS3 for a fun fast early game
-          </p>
-          <a href="https://www.nexusmods.com/darksouls3/mods/1457" target="_blank" class="project-link">Check it Out</a>
-        </div>
-
-        <div class="project-container project-card">
-          <h3 class="project-title">TrafficStopLight</h3>
-          <img
-            src="https://live.staticflickr.com/8765/17185552249_400c555d74_b.jpg"
-            alt="trafic light"
-            loading="lazy"
-            class="project-pic"
-          />
-          <p class="project-details">
-            For my final project for my logic design class, my group created Verilog code
-            to run a mock traffic stop light with alternating signals and a stop input.
-            Meant to be programmed on a Basys board to execute.	
-          </p>
-          <a href="https://github.com/shrotriiraj/TrafficStopLight" target="_blank" class="project-link">Check it Out</a>
-        </div>
-
-        <div class="project-container project-card">
-          <h3 class="project-title">Sorting Algorithm</h3>
-          <img
-            src="https://www.klipfolio.com/gatsby-files/static/fd30d98bb5f73cdf97d36191c1a847b9/algorithm.jpg"
-            alt="greeny-earth"
-            loading="lazy"
-            class="project-pic"
-          />
-          <p class="project-details">
-          I created a program that can sort numbers through 4 different methods in an
-          interactive manner. Includes Insertion Sort, Merge Sort, Selection Sort,
-          and Radix Sort methods.
-          </p>
-          <a href="#" target="_blank" class="project-link">Check it Out</a>
-        </div>
-     
-    </section>
-   
-
-  <!-- Work Experience section -->
-    <section class="workexperience" id="work">
-      <h2 class="work-title">Work Expereience</h2>
-    </p>
-  </p>
-      <div class="project-container">   
-          <h3 class="project-title">Undergraduate Research Assistant</h3>
-          <p class="project-details">
-          I am currently assigned 2 projects, the first one consists of attaching a laser sensor 
-          to a lab setup for studying the properties of combustible materials.  The second one 
-          is creating a new 3D printer head for micro-layers of combustible materials
-          </p>
-          <a href="https://mrzgroup.ucr.edu/" target="_blank" class="project-link">Check it Out</a>
-        </p>
-      </p>
-        </div>
-
-          <h3 class="project-title">Assistant Wrestling Coach</h3>
-          <p class="project-details">
-          Worked with youth ages 7-12. Practicing wrestling and safety with students. 
-          Answered questions from students and parents and prepared students for competition.
-          </p>
-          <a href="https://sites.google.com/site/mustangswrestlingclub/about-the-team" target="_blank" class="project-link">Check it Out</a>
-        </p>
-      </p>
-      </div>
-
-            <h3 class="project-title">Junior Assistant ScoutMaster</h3>
-            <p class="project-details">
-              I organized and executed a Service Project at a local church toearn Eagle Scout Rank.
-              I've taken courses on accountability, leadership and responsibility. I've also spent 
-              many hours volunteering. 
-            </p>
-        <a href="https://www.troopwebhost.org/Troop493Cupertino/Index.htm" target="_blank" class="project-link">Check it Out</a>
-      </p>
-    </p>
-      </div>
-      </div>
-    </section>
-
-    <!-- Credentials Section -->
-    <section class="credentials" id="credentials">
-      <h2 class="credentials">Documents </h2>
-        <p class="bio-text">
-
-          <a href="https://docs.google.com/document/d/1-SNZSSIJvuAkGMCuxMyRvn3arDdWnuZs33MD-VemEeg/export?format=pdf" target="_blank" class="project-link">Resume</a>
-
-        </p>
-
-          <a href="https://docs.google.com/document/d/1mtKnTlybCodFJdP3tsh7nez5ZnbhcEkgNMU2oD4SHB8/export?format=pdf" target="_blank" class="project-link">Curriculum Vitae</a>
-
-        </p>
-
-        </p>
-    </section>
-
-
-    <!-- Contact section -->
-    <section class="contact" id="contact">
-      <h2>Get In Touch With Me</h2>
-      <div class="contact-form-container">
-        <div class="contact-form">
-          <form action="https://formspree.io/f/xyylngw" method="POST">
-            <div class="form-control">
-              <label for="name">Name</label>
-              <input
-                type="text"
-                id="name"
-                name="sender-name"
-                placeholder="Enter Your Name"
-                class="input-field"
-                required
-              />
-            </div>
-            <div class="form-control">
-              <label for="email">Email</label>
-              <input
-                type="email"
-                id="email"
-                name="sender-email"
-                placeholder="Enter Your Email"
-                class="input-field"
-                required
-              />
-            </div>
-            <div class="form-control">
-              <label for="message">Message</label>
-              <textarea
-                id="message"
-                cols="60"
-                rows="10"
-                placeholder="Enter Your Message"
-                name="message"
-                class="input-field"
-                required
-              ></textarea>
-            </div>
-            <input
-              type="submit"
-              value="Submit"
-              id="submit-btn"
-              class="submit-btn"
-            />
-          </form>
-        </div>
-      </div>
-    </section>
-
-    <!-- Social accounts - Fixed to the right -->
-    <div class="socials">
-      <a href="#" target="_blank"
-        ><img
-          src="assets/icons/icons8-twitter-circled.gif"
-          alt="Twitter"
-          loading="lazy"
-          class="socicon"
-      /></a>
-      <a href="#" target="_blank"
-        ><img
-          src="assets/icons/icons8-instagram.gif"
-          alt="Instagram"
-          loading="lazy"
-          class="socicon"
-      /></a>
-      <a href="#" target="_blank"
-        ><img
-          src="assets/icons/icons8-linkedin-circled.gif"
-          alt="Linkedin"
-          loading="lazy"
-          class="socicon"
-      /></a>
-      <a href="#" target="_blank"
-        ><img src="assets/icons/icons8-github.gif" alt="Github" class="socicon"
-      /></a>
-
-    <!-- Scroll to top -->
-    <i class="scroll-up" id="scroll-up"
-    ><img
-      src="assets/icons/icons8-upward-arrow.gif"
-      class="socicon up-arrow"
-      alt="scroll-up"/></i>
-
-    <!-- Footer section -->
     <footer>
-      <p class="copy">&copy; Copyright 2021</p>
-      <p class="copy">
-        Built with &#x2661; by Iraj Shrotri
-      </p>
+        <p>© 2024 Iraj Shrotri. All Rights Reserved.</p>
+        <a href="mailto:shrotriiraj@gmail.com">Email Me</a> | <a href="https://linkedin.com/in/iraj-shrotri" target="_blank">LinkedIn</a>
     </footer>
-
-    <!-- Website scripts -->
-    <script src="assets/js/app.js"></script>
-
-    <!-- Ion icons scripts -->
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-    ></script>
-  </body>
+</body>
 </html>
