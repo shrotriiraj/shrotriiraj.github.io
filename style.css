@@ -95,7 +95,6 @@ h1, h2, h3 {
 }
 
 .links a {
-  margin-top: 1rem; /* Adds spacing above the bullet points */
   display: inline-block;
   margin-right: 10px;
   margin-bottom: 10px;
@@ -105,6 +104,8 @@ h1, h2, h3 {
   color: white;
   text-decoration: none;
   transition: background-color 0.3s, transform 0.2s;
+  margin-top: 1rem; /* Adds spacing above the bullet points */
+  margin-bottom: 1rem; /* Adds space below the buttons */
 }
 
 .links a:hover {
