@@ -95,6 +95,7 @@ h1, h2, h3 {
 }
 
 .links a {
+  margin-top: 1rem; /* Adds spacing above the bullet points */
   display: inline-block;
   margin-right: 10px;
   margin-bottom: 10px;
