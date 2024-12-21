@@ -13,6 +13,8 @@ body {
   background-color: #f5f5f5;
   color: #333;
   line-height: 1.6;
+  margin: 0;
+  padding: 0;
 }
 
 /* Header styles */
@@ -59,7 +61,10 @@ h1, h2, h3 {
 }
 
 /* Job and project styles */
-.job, .project {
+.job {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px; /* Space between the image and content */
   background: #fff;
   padding: 1.5rem;
   border-radius: 10px;
@@ -68,15 +73,25 @@ h1, h2, h3 {
   transition: all 0.3s;
 }
 
-.job:hover, .project:hover {
+.job:hover {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-ul {
-  margin-left: 1.5rem;
+.job-content {
+  flex: 2;
 }
 
-/* Animation styles */
+.job-image {
+  flex: 1;
+}
+
+.job-image img {
+  max-width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Animation styles for links */
 a {
   display: inline-block;
   padding: 0.5rem 1rem;
@@ -106,43 +121,12 @@ footer {
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
-  nav ul {
-    text-align: left;
+  .job {
+    flex-direction: column;
   }
 
   nav ul li {
     display: block;
     margin-bottom: 0.5rem;
   }
-
-  .job, .project {
-    padding: 1rem;
-  }
 }
-
-#experience {
-    margin-bottom: 40px;
-}
-
-.job {
-    display: flex;
-    align-items: flex-start; /* Align the image and text to the top */
-    gap: 20px; /* Add space between the text and the image */
-    margin-bottom: 40px;
-}
-
-.job-content {
-    flex: 2; /* The content takes up more space */
-}
-
-.job-image {
-    flex: 1; /* The image takes up less space */
-    text-align: center;
-}
-
-.job-image img {
-    max-width: 100%; /* Ensure the image scales properly */
-    border-radius: 12px; /* Rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
-}
-
