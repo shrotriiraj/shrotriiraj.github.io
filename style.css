@@ -119,3 +119,30 @@ footer {
     padding: 1rem;
   }
 }
+
+#experience {
+    margin-bottom: 40px;
+}
+
+.job {
+    display: flex;
+    align-items: flex-start; /* Align the image and text to the top */
+    gap: 20px; /* Add space between the text and the image */
+    margin-bottom: 40px;
+}
+
+.job-content {
+    flex: 2; /* The content takes up more space */
+}
+
+.job-image {
+    flex: 1; /* The image takes up less space */
+    text-align: center;
+}
+
+.job-image img {
+    max-width: 100%; /* Ensure the image scales properly */
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
